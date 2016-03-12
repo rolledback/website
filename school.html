@@ -57,7 +57,7 @@
                     <div class="text-center">
                         <h1>School</h1>
                         <ul role="tablist" class="nav nav-tabs centered">
-                            <li role="presentation"><a href="#overview" role="tab" data-toggle="tab">Overview</a></li>
+                            <li role="presentation" class="active"><a href="#overview" role="tab" data-toggle="tab">Overview</a></li>
                             <li role="presentation"><a href="#freshman" role="tab" data-toggle="tab">Freshman Year</a></li>
                             <li role="presentation"><a href="#sophomore" role="tab" data-toggle="tab">Sophomore Year</a></li>
                             <li role="presentation"><a href="#junior" role="tab" data-toggle="tab">Junior Year</a></li>
@@ -65,8 +65,9 @@
                             <li role="presentation"><a href="#projects" role="tab" data-toggle="tab">Notable Projects</a></li>
                         </ul>
                         <div class="tab-content">
-                            <div role="tabpanel" id="overview" class="tab-pane">
+                            <div role="tabpanel" id="overview" class="tab-pane active">
                                 <h2>Overview</h2>
+                                <p>Over the past 4 years at UT I have taken a variety of computer science classes. These include required classes, and a number of upper division electives which I was able to choose at my own discrestion. Some of my personal favorites include Multi Agent Autonomous Systems, Compilers, and Object Oriented Programming. If you'd like to see all of the classes I've taken, then feel free to have a look at the different years on this page. You may also be intrested to see some of the more interesting projects I have completed for school, which can all be found under Notable Projects.
                             </div>
 
                             <div role="tabpanel" id="freshman" class="tab-pane">
@@ -232,6 +233,45 @@
 
                             <div role="tabpanel" id="projects" class="tab-pane">
                                 <h2>Notable Projects</h2>
+                                <p>Choose a project from the dropdown below.</p>
+                                <div class="text-left">
+                                    <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="projectDropdown" data-toggle="dropdown" aria-expanded="true">
+                                            Projects
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu" aria-labelledby="projectDropdown">
+                                            <li role="presentation"><a role="menuitem" href="#y86">Y86 Simulator</a></li>
+                                            <li role="presentation"><a role="menuitem" href="#compBio">Computational Biology Paper</a></li>
+                                            <li role="presentation"><a role="menuitem" href="#bacon">Degrees of Kevin Bacon</a></li>
+                                            <li role="presentation"><a role="menuitem" href="#compiler">Pascal Compiler</a></li>
+                                            <li role="presentation"><a role="menuitem" href="#viewer">Model Viewer</a></li>
+                                            <li role="presentation"><a role="menuitem" href="#agent">Multi Agent Autonomous Systems Paper</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="ibox-content">
+                                        <div class="active content" id="y86">
+                                            <h3>Y86 Simulator</h3>
+                                        </div>
+                                        <div class="content" id="compBio">
+                                            <h3>Computational Biology Paper</h3>
+                                        </div>
+                                        <div class="content" id="bacon">
+                                            <h3>Degrees of Kevin Bacon</h3>
+                                        </div>
+                                        <div class="content" id="compiler">
+                                            <h3>Pascal Compiler</h3>
+                                        </div>
+                                        <div class="content" id="viewer">
+                                            <h3>Model Viewer</h3>
+                                        </div>
+                                        <div class="content" id="agent">
+                                            <h3>Multi Agent Autonomous Systems Paper</h3>
+                                        </div>
+                                    </div>
+                                    <script src="static/js/school_projects.js"></script>
+                                </div>
                             </div>
                         </div>
                     </div>

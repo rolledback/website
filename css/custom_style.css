@@ -122,3 +122,10 @@ html, body {
 .nav-tabs.centered, .nav-pills.centered {
     text-align:center;
 }
+
+.ibox-content > div {
+  display: none;
+}
+.ibox-content > div.active {
+  display: block;
+}
